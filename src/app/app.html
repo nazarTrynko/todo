@@ -1,0 +1,32 @@
+<main>
+  <div class="container">
+
+    <label class="title">{{vm.appName}}</label>
+
+    <div class="input-container">
+      <input placeholder="Enter description" class="input" autofocus type="text" ng-model="vm.todoTitle" maxlength={{vm.inputLength}}>
+      <span class="counter">{{vm.todoTitle.length || 0}}/{{vm.inputLength}}<span>
+    </div>
+
+    <div class="button-container">
+      <div class="button" ng-click="vm.todoTitle && vm.addTodo()">Add todo</div>
+    </div>
+
+    <div class="todos-container">
+
+      <div class="todo" ng-click="vm.toggleCompleted($index)" ng-repeat="todo in vm.todos">
+
+        <div class="">
+          <img class="tick" ng-class="{visible: todo.completed, invisible: !todo.completed}" src="/img/check-mark-correct.svg" />
+          <span ng-class="{done: todo.completed}">{{todo.name}}</span>
+        </div>
+        <span class="delete" ng-click="vm.removeTodo(todo); $event.stopPropagation()">X</span>
+      </div>
+    </div>
+
+    <div ng-show="vm.showRemoveButton()" class="button-container">
+      <div class="button remove-button" ng-click="vm.removeAllCompleted()">Remove all completed</div>
+    </div>
+
+  </div>
+</main>

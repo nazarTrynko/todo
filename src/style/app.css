@@ -1,0 +1,160 @@
+/* styles in src/style directory are applied to the whole page */
+body {
+  background: #e6ecef;
+  color: #263238;
+}
+
+main {
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #263238;
+}
+
+.container {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.input, .input:active, .input:focus {
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #e6ecef;
+  border-width: 2px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: double;
+  border-color: #263238;
+  width: 500px;
+}
+
+.input:active {
+  outline-color: 'black'
+}
+
+.input::placeholder {
+  color: #aab9c1;
+}
+
+.input:focus {
+  outline-width: 0
+}
+
+.input-container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  width: auto;
+  padding: 0 30px 0 30px;
+  height: 54px;
+  border-radius: 50px;
+  background-color: #63adf2;
+  color: #ffffff;
+  box-shadow: 0 2px 10px 0 rgba(99, 173, 242, 0.5);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-delay: 0s;
+  transition-duration: 0.25s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.button:hover {
+  background-color: #63adf2;
+  box-shadow: 0 2px 20px 0 rgba(99, 173, 242, 0.8);
+}
+
+.button:active {
+  background-color: #4791d5;
+  box-shadow: 0 2px 20px 0 rgba(99, 173, 242, 0.5);
+}
+
+.remove-button {
+  background-color: #ff0052
+}
+
+.remove-button:hover {
+  background-color: #ff0032
+}
+
+.remove-button:active {
+  background-color: #ff0032;
+  box-shadow: 0 2px 20px 0 #ff0032;
+}
+
+.counter {
+  margin-left: 10px;
+  width: 30px;
+  text-align: right;
+}
+
+.todos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.todo {
+  cursor: pointer;
+  font-size: 24px;
+  color: #263238;
+  width: 700px;
+  height: 40px;
+  margin: 10px 0 10px 0;
+  margin-right: 40px;
+  border-bottom:solid 1px #aab9c1;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px 0 10px;
+  overflow: visible;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.done {
+  color: #b0b0b0;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.tick {
+  left: 40px;
+  height: 30px;
+  width: 30px;
+  fill: #282828;
+}

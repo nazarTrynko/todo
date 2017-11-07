@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="app" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular App</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <base href="/">
+</head>
+<body>
+  <app></app>
+  <!-- AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+  <!-- AngularFire -->
+  <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCSrGsthvyq6m0GELpM1mX4fYBtlrBQPcU",
+      authDomain: "todoapp-1a902.firebaseapp.com",
+      databaseURL: "https://todoapp-1a902.firebaseio.com",
+      projectId: "todoapp-1a902",
+      storageBucket: "todoapp-1a902.appspot.com",
+      messagingSenderId: "385097485033"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+</body>
+</html>
